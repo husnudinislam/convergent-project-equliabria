@@ -1,0 +1,1070 @@
+{
+    "model_name": "Convergent Emergence Architecture",
+    "short_name": "CEA",
+    "version": "0.3-alpha",
+    "subtitle": "Verification-First Energy-Based Reasoning Edition",
+    "description": "A theoretical framework for energy-grounded, verification-first machine reasoning. Grounded in physics, thermodynamics, information theory, and biological plausibility.",
+    "classification": "Open Research",
+    "scope_statement": "CEA is presented as a theoretical architecture with a structured experimental program. All quantitative performance projections are falsifiable hypotheses derived from theoretical analysis, not measured results. Rigorous engagement, challenge, and empirical testing are invited.",
+    "version_history": [
+        {
+            "version": "v0.1-alpha",
+            "date": "2025 Q1",
+            "changes": "Initial theoretical framework: six-layer hierarchy, QNode definition, thermodynamic grounding, neuromorphic hardware roadmap."
+        },
+        {
+            "version": "v0.2-alpha",
+            "date": "2025 Q2",
+            "changes": "Added Verification-First Paradigm, Hierarchical Verification Engine (HVE), Quantum-Inspired Tensor Field, HPC-first hardware roadmap, Information-Theoretic Foundations, Safety chapter, Experimental Roadmap, Economic analysis. Replaced neuromorphic-first with GPU/HPC Phase 1."
+        },
+        {
+            "version": "v0.3-alpha",
+            "date": "2025 Q3",
+            "changes": "Major scientific revision: (1) Hallucination Elimination Theorem reclassified as Conjecture 1 — Equilibrium Grounding Conjecture — with explicit ergodicity caveat and falsifiability conditions. (2) Universal Approximation claim corrected: Turing completeness via bounded recursive programs was an error; replaced with Proposition 1 scoped to approximate representation. (3) Glass Transition Risk section added as critical theoretical concern. (4) Four neuroscience foundations integrated: Global Workspace Theory, sparse coding, hippocampal attractor dynamics, neural criticality. (5) Failure conditions added to all Phase 1-3 experiments. (6) Limitations section substantially expanded. (7) Primary contribution reframed for precision and credibility."
+        }
+    ],
+    "principles": {
+        "core": [
+            "emergence",
+            "local_interaction",
+            "distributed_cognition",
+            "dynamic_topology",
+            "adaptive_memory",
+            "energy_based_processing",
+            "recursive_self_organization",
+            "multi_scale_reasoning",
+            "verification_first",
+            "thermodynamic_correctness",
+            "biological_plausibility",
+            "explicit_falsifiability"
+        ],
+        "inspiration": [
+            "particle_physics",
+            "cellular_organization",
+            "complex_systems",
+            "swarm_intelligence",
+            "quantum_field_dynamics",
+            "biological_networks",
+            "statistical_mechanics",
+            "information_theory",
+            "formal_verification",
+            "predictive_coding",
+            "global_workspace_theory",
+            "sparse_cortical_coding",
+            "hippocampal_attractor_dynamics",
+            "neural_criticality"
+        ],
+        "paradigm": {
+            "name": "Verification-First AI",
+            "status": "theoretical_proposal_awaiting_empirical_validation",
+            "hypothesis": "In a CEA system with properly designed grounding components, factual correctness is not a property evaluated after output generation. It is a thermodynamic stability condition enforced during computation. Incorrect outputs are not filtered after generation — they are energetically disfavored during generation.",
+            "falsifiability": "If TruthfulQA performance does not correlate significantly with QNode energy levels (Experiment E2.4, Pearson r < 0.40), Hypothesis 1 (Energy-Correctness Equivalence) is falsified.",
+            "central_hypothesis": {
+                "name": "Energy-Correctness Equivalence",
+                "label": "Hypothesis 1",
+                "statement": "In a CEA system with properly calibrated grounding components, we hypothesize the existence of a monotonically decreasing mapping f: R+ -> [0,1] such that P(correct | state s) approximately equals f(epsilon(s)), where epsilon(s) is the energy of state s. High-energy states are factually incorrect; low-energy states are factually correct.",
+                "test": "Experiment E2.4 — energy-correctness correlation on TruthfulQA",
+                "falsification_condition": "If Pearson r < 0.40 between QNode energy levels and output correctness, this hypothesis is not supported, undermining the core theoretical premise of the Verification-First paradigm."
+            }
+        }
+    },
+    "neuroscience_foundations": {
+        "description": "Four neuroscience foundations providing biological plausibility grounding for CEA architectural features. Biological plausibility is evidence that mechanisms are not biologically implausible — it is not proof of correctness.",
+        "foundations": [
+            {
+                "name": "Global Workspace Theory",
+                "label": "Neuroscience Foundation I",
+                "references": [
+                    "Baars, 1988",
+                    "Dehaene, 2014"
+                ],
+                "biological_basis": "Consciousness and flexible cognition arise when local specialized processors compete to broadcast their representations to a shared global workspace accessible system-wide. Neural correlates of global workspace ignition: rapid, all-or-nothing broadcast of a winning representation to frontoparietal networks that gates further processing throughout the cortex.",
+                "cea_connection": "The organism-layer Quantum-Inspired Tensor Field is architecturally convergent with GWT's global workspace. Both architectures propose that global cognitive coherence emerges from competitive broadcast of locally-computed representations to a system-wide shared field. In CEA, consistency collapse plays the role of GWT's ignition event — a global propagation of constraint information through tensor contractions.",
+                "scope_limitation": "This convergence is taken as biological plausibility evidence for the QITF design principle, not as proof of equivalence or any claim regarding consciousness or subjective experience. Consciousness claims are explicitly outside the scope of this paper."
+            },
+            {
+                "name": "Sparse Cortical Coding",
+                "label": "Neuroscience Foundation II",
+                "references": [
+                    "Olshausen & Field, 1996",
+                    "Field, 1994"
+                ],
+                "biological_basis": "Primary visual cortex neurons represent natural images through sparse, distributed codes: approximately 1-5% of neurons respond to any given input at any given moment. This sparsity emerges from energy-minimizing optimization — the brain minimizes a combined cost function trading off representational accuracy against metabolic energy expenditure. Sparse codes maximize information transmitted per unit metabolic cost.",
+                "cea_connection": "CEA's energy-gated QNode activation is designed to produce activation sparsity of 5-15% at the quantum layer and 1-5% at higher layers — values consistent with observed biological sparse coding. Crucially, this sparsity emerges in CEA through the same mechanism as in cortex: energy-minimizing dynamics that deactivate low-information units.",
+                "scope_limitation": "Direct comparison requires validating the sparsity figures empirically through the Phase 1 experiments (E1.2). These are falsifiable projections, not measured results."
+            },
+            {
+                "name": "Hippocampal Attractor Dynamics",
+                "label": "Neuroscience Foundation III",
+                "references": [
+                    "Hopfield, 1982",
+                    "Amit, 1989",
+                    "Rolls, 2013"
+                ],
+                "biological_basis": "Hippocampal CA3, with its extensive recurrent excitatory connections, implements content-addressable attractor memory — patterns are stored as energy minima and retrieved when partial cues activate the corresponding attractor basin. Pattern completion occurs through energy-minimizing dynamics.",
+                "cea_connection": "CEA's memory crystallization mechanism proposes that memories are stable low-energy configurations in the QNode field. Memory access via resonance is architecturally analogous to pattern completion in hippocampal CA3. The key architectural extension beyond classical Hopfield/CA3 theory: CEA's six-scale memory hierarchy and phase-binding enrichment enable compositional memory access — retrieving not just individual facts but structured relational knowledge sharing phase with the query.",
+                "scope_limitation": "These extensions are novel architectural features not present in classical attractor network theory and require empirical validation."
+            },
+            {
+                "name": "Neural Criticality",
+                "label": "Neuroscience Foundation IV",
+                "references": [
+                    "Beggs & Plenz, 2003",
+                    "Shew & Plenz, 2013"
+                ],
+                "biological_basis": "Cortical networks exhibit neuronal avalanches following a power-law distribution of sizes — a signature of operation near a critical phase transition between ordered and chaotic dynamics. The near-critical regime maximizes dynamic range, information transmission capacity, and sensitivity to weak inputs.",
+                "cea_connection": "CEA's thermodynamic energy dynamics are designed to maintain the QNode field near a regime analogous to neural criticality: seeking low-energy equilibrium (ordered) while maintaining sufficient entropy to explore adjacent hypothesis spaces (flexible). The composite training objective's entropy floor is specifically designed to prevent the system from collapsing to full order.",
+                "hypothesis": "CEA systems operating near the critical regime will exhibit improved dynamic range and hypothesis exploration properties, testable through Phase 1 emergence experiments (E1.1).",
+                "architectural_motivation": "The gamma * H_entropy term with a minimum entropy bound in the training objective is motivated by the criticality literature."
+            }
+        ]
+    },
+    "architecture": {
+        "description": "Six-layer hierarchy organized as a bidirectional information flow system, explicitly not a feedforward pipeline.",
+        "information_channels": {
+            "bottom_up": "QNode interactions produce particle patterns; stable clusters crystallize into atomic memory; atomic graphs compose into molecular semantics; molecular patterns aggregate into cellular agent states; cellular collaboration produces organism-level coherence.",
+            "top_down": "The organism layer maintains a QITF tensor field encoding global context. This tensor is broadcast downward continuously, conditioning QNode dynamics at every layer without requiring sequential message passing.",
+            "lateral": "Within each layer, entities interact locally through field coupling Gamma, producing collective dynamics from which layer-level representations emerge without centralized coordination."
+        },
+        "layers": [
+            {
+                "id": "quantum_layer",
+                "label": "L1",
+                "role": "Probabilistic dynamic state computation, phase oscillation, energy routing",
+                "entity_type": "qnodes",
+                "behavior": {
+                    "state": "dynamic",
+                    "interactions": "local",
+                    "memory": "ephemeral",
+                    "routing": "energy_gated",
+                    "synchronization": "kuramoto_phase_coupling"
+                },
+                "properties": [
+                    "spin",
+                    "charge",
+                    "phase",
+                    "energy",
+                    "entropy"
+                ],
+                "output": "particle_patterns",
+                "analogy": "Quarks / Fields",
+                "critical_metric": "activation_sparsity <= 15%"
+            },
+            {
+                "id": "particle_layer",
+                "label": "L2",
+                "role": "Stable symbolic microstructure formation via attraction-repulsion bonding dynamics",
+                "entity_type": "pnodes",
+                "behavior": {
+                    "bonding": "attraction_repulsion",
+                    "stability": "adaptive",
+                    "learning": "interaction_reinforcement"
+                },
+                "output": "atomic_clusters",
+                "analogy": "Atoms",
+                "critical_metric": "cluster_stability_time"
+            },
+            {
+                "id": "atomic_layer",
+                "label": "L3",
+                "role": "Persistent field-based memory encoding, localized causal reasoning, mutation",
+                "entity_type": "anodes",
+                "behavior": {
+                    "memory_encoding": "field_based",
+                    "reasoning": "localized",
+                    "mutation": "allowed",
+                    "causal_graph": true
+                },
+                "output": "molecular_graphs",
+                "analogy": "Molecules",
+                "critical_metric": "memory_crystallization_rate"
+            },
+            {
+                "id": "molecular_layer",
+                "label": "L4",
+                "role": "Concept formation, semantic composition, context binding, symbolic consistency",
+                "entity_type": "mnodes",
+                "behavior": {
+                    "semantic_binding": true,
+                    "pattern_recognition": true,
+                    "context_awareness": true,
+                    "symbolic_consistency_enforcement": true
+                },
+                "output": "cellular_agents",
+                "analogy": "Macromolecules",
+                "critical_metric": "semantic_F1_score"
+            },
+            {
+                "id": "cellular_layer",
+                "label": "L5",
+                "role": "Autonomous cognitive agents: planning, perception, memory, simulation, self-reflection",
+                "entity_type": "cnodes",
+                "behavior": {
+                    "goal_oriented": true,
+                    "memory_persistence": true,
+                    "self_reflection": true,
+                    "collaboration": true
+                },
+                "subsystems": [
+                    "planning",
+                    "perception",
+                    "memory",
+                    "simulation",
+                    "language",
+                    "adaptation"
+                ],
+                "output": "organ_systems",
+                "analogy": "Neurons / Cells",
+                "critical_metric": "BIG_Bench_task_accuracy"
+            },
+            {
+                "id": "organism_layer",
+                "label": "L6",
+                "role": "Global orchestration via Tensor Field, multi-agent synchronization, recursive self-modeling",
+                "entity_type": "global_mind",
+                "behavior": {
+                    "global_reasoning": true,
+                    "multi_agent_synchronization": true,
+                    "self_optimization": true,
+                    "recursive_modeling": true,
+                    "tensor_field_broadcast": true
+                },
+                "output": "coherent_intelligence",
+                "analogy": "Prefrontal cortex / GWT global workspace",
+                "critical_metric": "cross_layer_consistency",
+                "global_context_mechanism": {
+                    "type": "quantum_inspired_tensor_field",
+                    "formalism": "matrix_product_state",
+                    "biological_analogy": "GWT global workspace — locally-detected consistency violations propagate through tensor contractions to condition all connected QNode clusters, analogous to GWT's global ignition event"
+                }
+            }
+        ]
+    },
+    "qnode": {
+        "description": "A stateful, energy-aware, phase-synchronized computational primitive. QNodes do not process inputs; they evolve in response to them.",
+        "design_philosophy": "Intelligence is not computed; it emerges from evolution.",
+        "formal_definition": "Q(t) = (psi(t), phi(t), epsilon(t), mu(t), Gamma(t))",
+        "components": {
+            "psi": {
+                "name": "state_vector",
+                "domain": "R^n",
+                "description": "Multi-dimensional internal representation encoding activation, contextual content, and relational position. Unlike scalar activation, psi encodes rich compositional content. Dimensionality n is a per-layer hyperparameter."
+            },
+            "phi": {
+                "name": "phase",
+                "domain": "[0, 2*pi)",
+                "description": "Oscillatory phase angle. Phase synchronization across QNode clusters encodes compositional binding — co-activated, semantically related concepts synchronize phases. Implements the neural binding solution without explicit pointer structures."
+            },
+            "epsilon": {
+                "name": "energy",
+                "domain": "R+",
+                "description": "Computational energy level encoding prediction error magnitude and verification failure penalty. Governs activation gating: low-epsilon QNodes enter quiescent state consuming near-zero resources."
+            },
+            "mu": {
+                "name": "memory_trace",
+                "update_rule": "mu(t) = alpha * mu(t-1) + (1 - alpha) * psi(t)",
+                "description": "Exponentially decaying trace of recent activation. Provides temporal context sensitivity. Decay constant alpha in (0,1) is a learnable parameter per QNode."
+            },
+            "Gamma": {
+                "name": "connection_field",
+                "domain": "N(Q) -> R",
+                "description": "Dynamic weighted field over neighboring QNodes. Unlike static weights, Gamma evolves through interaction: resonance reinforcement strengthens correlated connections; energy-gradient pruning eliminates zero-signal connections."
+            }
+        },
+        "transition_function": {
+            "formula": "Q(t+1) = T(Q(t), N_Gamma(Q,t), S_env(t), F_global(t))",
+            "component_updates": {
+                "psi_update": "psi(t+1) = f_psi(psi(t), N_Gamma, S_env, F_global)",
+                "phase_update": "phi(t+1) = phi(t) + omega + kappa * sum_j sin(phi_j - phi) + xi_phase   [Kuramoto dynamics]",
+                "energy_update": "epsilon(t+1) = beta * epsilon(t) + L_pred(t) + lambda_HVE * P_violation(t)   [energy accumulation]",
+                "trace_update": "mu(t+1) = alpha * mu(t) + (1 - alpha) * psi(t+1)   [trace update]",
+                "field_update": "Gamma(t+1) = Gamma(t) + eta * Delta_resonance - gamma * Gamma(t) * 1[epsilon_j < epsilon_min]   [field update]"
+            }
+        },
+        "energy_gating": {
+            "description": "QNodes with epsilon(t) < epsilon_min enter a quiescent state consuming near-zero resources.",
+            "projected_sparsity_L1": "5-15%",
+            "projected_sparsity_L5": "1-5%",
+            "biological_basis": "Consistent with sparse coding in biological sensory cortex (Olshausen & Field, 1996): approximately 1-5% of neurons active at any moment, emerging from the same energy-minimizing optimization principle.",
+            "empirical_caveat": "The 5-15% sparsity figure is derived from theoretical analysis and biological analogy, not measured from any implemented QNode system. If E1.2 shows active QNode fraction exceeding 20% at L1, the energy gating mechanism is insufficient for projected efficiency gains and the sparse activation hypothesis requires architectural revision."
+        },
+        "phase_binding": {
+            "mechanism": "Kuramoto coupled-oscillator dynamics",
+            "synchronization_condition": "|phi_i(t) - phi_j(t)| < delta_phase for t in [t_0, t_0 + T_bind]",
+            "information_theoretic_equivalence": "|phi_i(t) - phi_j(t)| < delta <=> I(psi_i; psi_j) > I_threshold",
+            "time_to_synchronization": "tau_sync = O(1/kappa_eff) with kappa_eff = kappa * I(psi_i; psi_j)",
+            "critical_coupling": "kappa_c = 2 / (pi * g(0))",
+            "biological_convergence": "Engel & Singer (2001) demonstrated temporal binding in biological cortex: neural synchrony at gamma frequencies serves as a mechanism for binding related representations."
+        },
+        "comparison_vs_alternatives": {
+            "MLP_neuron": {
+                "state_dimensions": 0,
+                "temporal_memory": "none",
+                "energy_awareness": false,
+                "phase_binding": false,
+                "grounding_integration": false,
+                "sparse_activation": false
+            },
+            "transformer_attention": {
+                "state_dimensions": 0,
+                "temporal_memory": "KV_cache_external",
+                "energy_awareness": false,
+                "phase_binding": "implicit",
+                "grounding_integration": false,
+                "sparse_activation": "partial_MoE_only"
+            },
+            "SNN_spike": {
+                "state_dimensions": 1,
+                "temporal_memory": "STDP_trace",
+                "energy_awareness": "spike_cost_only",
+                "phase_binding": "partial",
+                "grounding_integration": false,
+                "sparse_activation": true
+            },
+            "CEA_QNode": {
+                "state_dimensions": 5,
+                "temporal_memory": "native_mu(t)",
+                "energy_awareness": "full_epsilon_dynamics",
+                "phase_binding": "Kuramoto_synchronization",
+                "grounding_integration": "yes_HVE_penalty_in_epsilon",
+                "sparse_activation": "epsilon_gating"
+            }
+        }
+    },
+    "hierarchical_verification_engine": {
+        "abbreviation": "HVE",
+        "description": "A four-tier verification substrate running in parallel with all six processing layers. Structurally integrated — verdicts expressed as energy penalties in the QNode field, directly shaping thermodynamic dynamics of computation.",
+        "integration_principle": "States failing verification become energetically unstable, and the system's natural dynamics drive it away from them. The physics takes care of correctness.",
+        "reality_alignment_constraint": {
+            "formula": "G(s) = w1*G_T1(s) + w2*G_T2(s) + w3*G_T3(s) + w4*G_T4(s)",
+            "score_domain": "G_Ti(s) in [0,1]",
+            "acceptance_condition": "G(s) >= theta_reality(context)",
+            "weight_constraint": "w1 < w2 < w3 < w4, sum(w_i) = 1",
+            "adaptive_threshold": {
+                "formula": "theta_reality(context) = theta_base * (1 + gamma_domain * D_stakes(context))",
+                "high_stakes_domains": [
+                    "medical",
+                    "legal"
+                ],
+                "flexible_domains": [
+                    "creative_tasks"
+                ]
+            }
+        },
+        "cluster_energy_update": "epsilon_cluster(t+1) = epsilon_cluster(t) + sum_i w_i * DeltaP_Ti * 1[G_Ti(s) < theta_Ti]",
+        "tiers": [
+            {
+                "tier": "T1",
+                "type": "logical_consistency",
+                "latency": "sub_millisecond",
+                "scope": "immediate_context_window",
+                "energy_penalty": "small: DeltaP_T1",
+                "description": "Detects direct logical contradictions, syntactic impossibilities, and violated hard constraints within the current inference step.",
+                "application": "per_token"
+            },
+            {
+                "tier": "T2",
+                "type": "causal_consistency",
+                "latency": "milliseconds",
+                "scope": "3_hop_causal_graph_neighborhood",
+                "energy_penalty": "medium: DeltaP_T2",
+                "description": "Checks proposed states against the causal neighborhood in the atomic layer's knowledge graph. Catches violated cause-effect relationships.",
+                "application": "per_clause"
+            },
+            {
+                "tier": "T3",
+                "type": "semantic_grounding",
+                "latency": "10_to_100ms",
+                "scope": "molecular_semantic_field",
+                "energy_penalty": "large: DeltaP_T3",
+                "description": "Cross-references proposed semantic compositions against crystallized knowledge structures. Detects category errors, semantic impossibilities, and factual inconsistencies.",
+                "application": "per_proposition"
+            },
+            {
+                "tier": "T4",
+                "type": "external_simulation",
+                "latency": "100ms_to_10s",
+                "scope": "full_external_grounding",
+                "energy_penalty": "maximum: DeltaP_T4",
+                "description": "Triggered selectively when lower tiers produce anomalous signals. Computation-based fact-verification via parallel simulation processes.",
+                "trigger_condition": "max(G_T1, G_T2, G_T3) < theta_trigger AND epsilon_state > epsilon_T4threshold",
+                "expected_invocation_rate": "less than 1% of inference steps",
+                "simulation_methods": [
+                    {
+                        "method": "physics_micro_simulation",
+                        "applies_to": "claims involving physical processes"
+                    },
+                    {
+                        "method": "logical_proof_search",
+                        "applies_to": "claims involving logical or mathematical relationships"
+                    },
+                    {
+                        "method": "counterfactual_consistency_via_do_calculus",
+                        "applies_to": "causal claims (Pearl, 2009)"
+                    },
+                    {
+                        "method": "external_cross_reference",
+                        "applies_to": "factual claims in knowledge base scope"
+                    }
+                ],
+                "engineering_constraint": "T4 simulation latency of 100ms-10s is fundamentally incompatible with real-time control applications requiring sub-millisecond response. CEA in latency-critical contexts must operate without T4 or pre-compute verdicts for predictable claim types. This is a genuine architectural limitation with no trivial resolution.",
+                "application": "selective_high_uncertainty_claims"
+            }
+        ]
+    },
+    "quantum_inspired_tensor_field": {
+        "abbreviation": "QITF",
+        "critical_note": "Classical algorithm with quantum-inspired mathematics. Runs on classical GPU and HPC hardware. No quantum processor required.",
+        "biological_plausibility_note": "The QITF architecture is convergent with Global Workspace Theory (Baars, 1988; Dehaene, 2014). The tensor field plays the role of the global workspace: locally-detected consistency violations propagate through tensor contractions to condition all connected QNode clusters, analogous to GWT's global ignition event. This is biological plausibility evidence for the architectural design principle, not a claim of consciousness or biological equivalence.",
+        "global_context_representation": {
+            "formalism": "Matrix Product State (MPS) tensor network",
+            "formula": "F_global = sum_{s1...sN} M^{s1}[1] * M^{s2}[2] * ... * M^{sN}[N] |s1s2...sN>",
+            "storage_complexity": "N * D^2 * d (polynomial vs d^N for exact)",
+            "update_complexity": "O(D^3) per affected cluster — independent of N",
+            "marginal_complexity": "O(D^3) independent of N"
+        },
+        "bond_dimension": {
+            "symbol": "D",
+            "role": "Controls the expressivity-efficiency tradeoff",
+            "adaptive_formula": "D(t) = D_min + (D_max - D_min) * sigma(H(input) - H_threshold)",
+            "low_entropy_range": "D = 16-64",
+            "high_entropy_range": "D = 256-1024",
+            "bottleneck_elimination": "Reduces global context integration from O(N) to O(D^3) for fixed D."
+        },
+        "consistency_collapse": {
+            "description": "When the HVE detects a high-confidence inconsistency in any cluster, it modifies the MPS tensors in that cluster's neighborhood. Due to the entangled structure of the MPS, this propagates through tensor contractions to all connected clusters — not as a sequential message but as an algebraic consequence of tensor multiplication.",
+            "effect": "Competing hypotheses sharing structure with the inconsistent state inherit elevated energy. Alternative states avoiding the inconsistency become relatively favored."
+        },
+        "scaling_constraint": "For very large N with complex global state, the required bond dimension D may grow to the point where O(N * D^3) cost exceeds practical budget. Better tensor network architectures — tree tensor networks or MERA — may be needed at extreme scale. This is an identified open engineering problem, not a solved one."
+    },
+    "training_objective": {
+        "formula": "L_total = alpha * L_pred + beta * E_cost + gamma * H_entropy + delta * C_consistency + lambda * R_resonance",
+        "components": {
+            "L_pred": {
+                "name": "prediction_loss",
+                "signal_type": "accuracy",
+                "formula": "L_pred = -sum y * log(p_hat)",
+                "description": "Standard cross-entropy. Necessary for baseline competency but insufficient alone — minimizing L_pred without grounding produces hallucination."
+            },
+            "E_cost": {
+                "name": "energy_cost",
+                "signal_type": "efficiency",
+                "formula": "E_cost = sum_i epsilon_i * 1[epsilon_i > epsilon_min]",
+                "description": "Total active-QNode energy. Minimizing drives sparse activation and low-energy stable configurations. Creates thermodynamic pressure toward parsimony."
+            },
+            "H_entropy": {
+                "name": "system_entropy",
+                "signal_type": "stability",
+                "formula": "H_entropy = -sum_i p_i * log(p_i) over QNode state distribution",
+                "description": "Minimizing favors definite, confident states. An entropy floor, motivated by neural criticality (Beggs & Plenz, 2003), prevents degeneracy and preserves exploration capacity.",
+                "entropy_floor_motivation": "Neural criticality literature: the near-critical regime maximizes dynamic range and information transmission. Preventing full collapse to order preserves exploration."
+            },
+            "C_consistency": {
+                "name": "consistency_penalty",
+                "signal_type": "grounding",
+                "formula": "C_consistency = sum_v violation_weight(v) over detected HVE violations v",
+                "description": "Penalizes logical contradictions, causal violations, and semantic impossibilities. The primary anti-hallucination training signal."
+            },
+            "R_resonance": {
+                "name": "resonance_reward",
+                "signal_type": "memory",
+                "formula": "R_resonance = sum_{ij} Cov(phi_i, phi_j) * similarity(psi_i, psi_j)",
+                "description": "Rewards phase synchronization between semantically related QNode clusters. Drives memory crystallization and compositional binding."
+            }
+        },
+        "curriculum": [
+            {
+                "phase": "P1",
+                "duration_budget": "20%",
+                "active_components": [
+                    "alpha*L_pred"
+                ],
+                "goal": "Establish baseline pattern competency. QNode psi-states learn to encode semantically meaningful representations."
+            },
+            {
+                "phase": "P2",
+                "duration_budget": "+15%",
+                "active_components": [
+                    "alpha*L_pred",
+                    "beta*E_cost"
+                ],
+                "goal": "Prune inefficient activation. Sparse activation patterns emerge; quiescent QNode behavior stabilizes."
+            },
+            {
+                "phase": "P3",
+                "duration_budget": "+15%",
+                "active_components": [
+                    "alpha*L_pred",
+                    "beta*E_cost",
+                    "gamma*H_entropy"
+                ],
+                "goal": "Develop confident stable representations. Phase clustering begins. Entropy floor engaged to maintain near-critical exploration."
+            },
+            {
+                "phase": "P4",
+                "duration_budget": "+30%",
+                "active_components": [
+                    "alpha*L_pred",
+                    "beta*E_cost",
+                    "gamma*H_entropy",
+                    "delta*C_consistency"
+                ],
+                "goal": "HVE integration. Factual inconsistency penalized; energy barriers around incorrect states form. Hallucination suppression emerges measurably. Critical training phase.",
+                "risk": "Addition of consistency penalties may destabilize Phase 3 representations if gradient surgery does not fully resolve objective conflicts."
+            },
+            {
+                "phase": "P5",
+                "duration_budget": "+20%",
+                "active_components": [
+                    "alpha*L_pred",
+                    "beta*E_cost",
+                    "gamma*H_entropy",
+                    "delta*C_consistency",
+                    "lambda*R_resonance"
+                ],
+                "goal": "Memory crystallization. Long-term knowledge structures form via phase synchronization."
+            }
+        ],
+        "gradient_conflict_resolution": {
+            "method": "gradient_surgery",
+            "reference": "Yu et al., 2020",
+            "description": "Conflicting gradient components projected onto orthogonal complement of each other's gradient space. Critical during Phase 3-4 transitions where entropy minimization can conflict with consistency penalty gradients."
+        }
+    },
+    "memory_model": {
+        "metaphor": "Memory as crystallization — stable low-energy configurations in the QNode field resistant to perturbation. Grounded in thermodynamics: just as physical crystals are thermodynamically stable molecular arrangements, CEA memories are dynamically stable QNode configurations.",
+        "biological_basis": "Memory access via resonance is architecturally analogous to pattern completion in hippocampal CA3 attractor networks (Hopfield, 1982; Amit, 1989; Rolls, 2013). The key architectural extension: phase-binding enables compositional memory access not present in classical attractor network theory.",
+        "access_principle": "resonance_not_addressing",
+        "types": [
+            {
+                "type": "wave_memory",
+                "label": "Wave / Working",
+                "layer": "L1-L2",
+                "mechanism": "phase_oscillation_active_QNode_field",
+                "duration": "single_inference",
+                "capacity": "limited_by_active_QNodes"
+            },
+            {
+                "type": "resonance_traces",
+                "label": "Resonance Trace",
+                "layer": "L2-L3",
+                "mechanism": "decaying_Gamma_field_weights_from_recent_resonance_events",
+                "duration": "minutes_to_hours",
+                "capacity": "O(N^2) connection field"
+            },
+            {
+                "type": "crystallized_graphs",
+                "label": "Crystallized Graph",
+                "layer": "L3-L4",
+                "mechanism": "stable_low_energy_QNode_configurations_field_based_associative_access",
+                "duration": "persistent_evolving",
+                "capacity": "Hopfield scaling O(N^2/log N)"
+            },
+            {
+                "type": "semantic_schemas",
+                "label": "Semantic Schema",
+                "layer": "L4-L5",
+                "mechanism": "MNode_compositional_binding_phase_locked_clusters",
+                "duration": "persistent",
+                "capacity": "compositionally_unbounded"
+            },
+            {
+                "type": "global_context",
+                "label": "Global Context",
+                "layer": "L6",
+                "mechanism": "QITF_tensor_state",
+                "duration": "session",
+                "capacity": "O(N*D^2) compressed"
+            }
+        ],
+        "evolution": {
+            "pruning": {
+                "enabled": true,
+                "trigger": "H(structure) > H_max",
+                "description": "Infrequently activated memory structures accumulate entropy; when threshold exceeded, structure dissolves freeing QNode capacity."
+            },
+            "mutation": {
+                "enabled": true,
+                "description": "During low-activity consolidation phases, memory structures undergo controlled stochastic perturbation, occasionally discovering improved formulations of stored knowledge."
+            },
+            "reconsolidation": {
+                "enabled": true,
+                "description": "When a stored memory is accessed and updated by new information, the existing structure is temporarily destabilized, updated, and re-crystallized — enabling genuine belief updating rather than contradictory parallel storage."
+            }
+        }
+    },
+    "learning_mechanisms": {
+        "primary": "composite_five_component_training_objective_with_staged_curriculum",
+        "biologically_inspired": [
+            {
+                "name": "resonance_reinforcement",
+                "type": "Hebbian_variant",
+                "rule": "Gamma(t+1) = Gamma(t) + eta * psi_i outer psi_j * 1[|phi_i - phi_j| < delta]",
+                "description": "Connection fields strengthen between co-active, phase-synchronized QNodes."
+            },
+            {
+                "name": "energy_gradient_descent",
+                "rule": "psi(t+1) = psi(t) - eta_psi * grad_psi epsilon(t)",
+                "description": "Continuous local learning without backpropagation through time."
+            },
+            {
+                "name": "structural_plasticity",
+                "description": "Connections with sustained zero energy contribution are pruned; new connections form between QNodes showing correlated high-energy spikes."
+            },
+            {
+                "name": "memory_consolidation",
+                "type": "sleep_phase_analogue",
+                "reference": "Walker, 2017",
+                "description": "During low-activity periods, controlled stochastic perturbation of low-activation memory structures. Computationally analogous to sleep consolidation in biological memory systems."
+            }
+        ]
+    },
+    "information_theoretic_foundations": {
+        "landauer_principle": {
+            "reference": "Landauer, 1961",
+            "statement": "Erasing one bit of information requires dissipating at least k_B * T * ln(2) joules of energy. This is a law of physics, not an engineering limitation.",
+            "cea_application": "When the HVE detects and eliminates an inconsistent state, it performs an information erasure. Energy penalties calibrated to: DeltaP_Ti(violation) >= k_B * T * ln(2) * I(violation), ensuring the grounding mechanism is physically consistent."
+        },
+        "shannon_channel_capacity": {
+            "reference": "Shannon, 1948",
+            "formula": "C = B * log2(1 + SNR)",
+            "cea_application": {
+                "grounding_bandwidth_condition": "G_bandwidth = sum_i B_Ti * log2(1 + SNR_Ti) >= R_claims",
+                "description": "Formal necessary condition for grounding to keep pace with generation. Experiment E1.4 tests this by measuring HVE tier throughput against realistic claim generation rates."
+            }
+        },
+        "kolmogorov_complexity": {
+            "reference": "Rissanen, 1978; Grunwald, 2007",
+            "cea_application": {
+                "formula": "epsilon(configuration) proportional to K(configuration | world_model)",
+                "interpretation": "Truth is compressible, hallucination is incompressible. The CEA energy landscape is a Kolmogorov complexity landscape."
+            }
+        },
+        "mutual_information_phase_binding": {
+            "equivalence": "|phi_i(t) - phi_j(t)| < delta <=> I(psi_i; psi_j) > I_threshold",
+            "biological_convergence": "Engel & Singer (2001): neural synchrony at gamma frequencies serves as a mechanism for binding related representations."
+        },
+        "grounding_bound": {
+            "name": "Proposition 2 — Information-Theoretic Grounding Bound",
+            "status": "proposition_not_theorem",
+            "statement": "In a CEA system satisfying G_bandwidth >= R_claims, with energy penalties calibrated to Landauer bound, and energy landscape reflecting Kolmogorov complexity, E[I(hallucination)] <= epsilon_information -> 0 as theta_reality -> 1.",
+            "scope": "Quantitative bound on error rate, not a zero-error guarantee. Empirical validity depends on whether real inference dynamics satisfy the bandwidth and ergodicity conditions."
+        }
+    },
+    "theoretical_results": {
+        "lyapunov_analysis": {
+            "function": "V(t) = sum_i epsilon_i(t) + gamma * H(Psi(t)) + delta * sum_v 1[G(s_v) < theta]",
+            "claim": "V(t) is non-increasing along CEA system trajectories under gradient descent dynamics.",
+            "proof_sketch": "Each QNode update minimizes local energy under fixed neighbor states. System entropy minimized by Phase 3 training objective. Violation count decreases under HVE energy penalties by construction. Therefore dV/dt <= 0. By Lyapunov's theorem, trajectories under idealized conditions converge to {V = V_min}.",
+            "caveat": "Proof applies under idealized gradient descent in a smooth energy landscape. In practice, QNode dynamics are stochastic and the energy landscape is non-convex with many local minima. Local convergence does not imply global convergence. The glass transition risk is precisely the condition under which this idealized stability analysis fails."
+        },
+        "equilibrium_grounding_conjecture": {
+            "name": "Conjecture 1 — Equilibrium Grounding Conjecture",
+            "status": "conjecture_pending_empirical_validation",
+            "revision_note": "This result was presented as a proven theorem (Theorem 3) in v0.2 under the name 'Hallucination Elimination Theorem.' Upon rigorous review, the proof sketch relied on the ergodicity assumption without deriving it, and the Lyapunov stability argument proved local but not global convergence. Reclassified as Conjecture 1 in v0.3.",
+            "statement": "Let C be a CEA system satisfying: (i) QNode dynamics governed by energy-gradient descent; (ii) HVE penalties calibrated to Landauer bound; (iii) ergodic dynamics — every state reachable from every other state in finite steps. Then in the stationary distribution pi of C: pi({s : G(s) < theta}) -> 0 as HVE penalty strength -> infinity. Moreover, under ergodic conditions, the mixing time to stationary distribution is bounded: tau_mix <= O(N * D^3 / Delta_epsilon_min).",
+            "critical_caveat": {
+                "assumption": "ergodic_dynamics",
+                "concern": "Ergodicity is a substantial assumption unlikely to hold exactly in practical QNode fields of realistic scale, which will contain many local energy minima and potentially glassy dynamics.",
+                "key_question": "Whether real CEA inference dynamics are sufficiently ergodic for this conjecture to hold empirically is precisely the question motivating Experiment E2.1.",
+                "falsification_condition": "If E2.1 shows hallucination suppression not significantly exceeding transformer baselines under equivalent computational budget, the ergodic dynamics assumption is empirically challenged and the thermodynamic grounding framework requires fundamental revision."
+            },
+            "value_if_confirmed": "Validates the Verification-First paradigm.",
+            "value_if_falsified": "The specific failure mode will diagnose which assumption broke down, guiding architectural revision."
+        },
+        "expressivity": {
+            "name": "Proposition 1 — Expressivity (Approximate Representation)",
+            "status": "proposition",
+            "statement": "The CEA cellular layer with CNode agents possessing planning and simulation subsystems is capable of approximating a broad class of continuous functions on compact domains.",
+            "basis": "Density of continuous functions in L2 spaces and compositional structure of CNode computation, by analogy to classical universal approximation results (Hornik et al., 1989; Cybenko, 1989).",
+            "v0_2_correction": "V0.2 claimed CNode agents implement 'bounded recursive programs' and invoked Turing completeness. This was an error: bounded recursive programs are not Turing-complete — Turing completeness requires unbounded computation. Proposition 1 uses the weaker and correct claim: expressivity analogous to classical UAT results, not Turing completeness. A full formal proof requires specification of CNode computational primitives beyond the scope of this paper."
+        },
+        "phase_synchronization_convergence": {
+            "critical_coupling": "kappa_c = 2 / (pi * g(0))",
+            "time_to_synchronization": "tau_sync = O(1/kappa_eff) with kappa_eff = kappa * I(psi_i; psi_j)",
+            "interpretation": "High-mutual-information pairs synchronize rapidly. Low-information pairs remain asynchronous — correctly representing semantic independence."
+        },
+        "glass_transition_risk": {
+            "label": "Critical Theoretical Concern (NEW in v0.3)",
+            "description": "A critical theoretical risk for CEA's stability properties: in high-dimensional energy landscapes such as those produced by large-scale QNode fields, gradient descent dynamics may become trapped in local energy minima, producing behavior analogous to glass transitions in physical disordered systems.",
+            "reference": "Binder & Kob, 2011",
+            "symptoms": {
+                "persistent_incorrect_states": "Locally consistent but globally incorrect states that cannot escape to the global minimum, persisting indefinitely regardless of HVE penalties.",
+                "exponential_mixing_times": "Mixing times exponentially larger than the polynomial bound in Conjecture 1, making the equilibrium grounding guarantee unreachable in practical inference.",
+                "path_dependent_equilibria": "Final states sensitive to initialization, making outputs non-deterministic in ways not attributable to intentional uncertainty."
+            },
+            "highest_risk_conditions": [
+                "many competing semantic interpretations with similar energy",
+                "sparse high-dimensional psi-state spaces",
+                "weak HVE penalty signals relative to local energy wells"
+            ],
+            "diagnostic_experiment": "E2.1 — if hallucination energy elevation does not occur consistently across different initialization conditions, glassy dynamics are a likely explanation.",
+            "mitigations_under_investigation": [
+                "entropy_regularized_dynamics_to_prevent_glass_formation",
+                "hierarchical_initialization_from_known_good_configurations",
+                "adaptive_temperature_schedules_analogous_to_simulated_annealing"
+            ],
+            "status": "open_theoretical_challenge_requiring_substantial_architectural_innovation"
+        },
+        "complexity_analysis": {
+            "qnode_field_update": "O(N * |N_Gamma|) parallel — parallelizes to O(|N_Gamma|) on GPU",
+            "QITF_global_context": "O(N * D^3) per update — D=64 gives 10^6x compression over full joint",
+            "HVE_T1_logical": "O(context_length) — linear, parallelizable",
+            "HVE_T2_causal": "O(k^3) where k = 3-hop radius — bounded by hop radius, independent of total graph size",
+            "HVE_T3_semantic": "O(log M) with HNSW index — sub-linear retrieval",
+            "HVE_T4_simulation": "O(T_sim * N_sim) — triggered <1% of steps, parallelizable",
+            "memory_crystallization": "O(N^2 / log N) capacity — Hopfield scaling, favorable with sparse connectivity"
+        }
+    },
+    "execution_modes": [
+        {
+            "mode": "deterministic",
+            "trigger": "G(s) >> theta, stable field",
+            "mechanism": "Greedy energy-minimum selection. Temperature -> 0 in Boltzmann sampling.",
+            "use_case": "Well-grounded factual retrieval."
+        },
+        {
+            "mode": "probabilistic",
+            "trigger": "moderate_uncertainty",
+            "mechanism": "Temperature-weighted sampling from low-energy state distribution. Multiple pathways evaluated; energy-ranked selection. Analogous to beam search but thermodynamically constrained.",
+            "use_case": "Exploratory emergent reasoning."
+        },
+        {
+            "mode": "superposition",
+            "trigger": "novel_or_ambiguous_input",
+            "mechanism": "Parallel hypothesis tensor maintained as superposition of competing interpretations. Tensor Field collapse via contraction selects minimum-energy consistent state. Equivalent to coherent multi-hypothesis inference before observation.",
+            "use_case": "Novel or highly ambiguous inputs."
+        }
+    ],
+    "hardware_roadmap": {
+        "strategy": "HPC_first",
+        "strategic_rationale": "Neuromorphic hardware at competitive scale is 10-15 years from production readiness. Full CEA architecture is implementable today on GPU supercomputing infrastructure. Neuromorphic hardware repositioned as Phase 2.",
+        "gpu_operations_mapping": {
+            "qnode_evolution": "Massively parallel SIMT — one CUDA thread per QNode",
+            "kuramoto_phase_dynamics": "Sparse graph computation over Gamma field using PyTorch/JAX sparse tensors",
+            "qitf_tensor_contractions": "Batched matrix multiplications via NVIDIA cuTENSOR library",
+            "hve_T1_T2": "T1 on CPU parallel with GPU. T2 via GPU-accelerated graph neural networks",
+            "hve_T3_T4": "T3 via FAISS-compatible vector similarity search. T4 as async HPC jobs"
+        },
+        "phases": [
+            {
+                "phase": 1,
+                "hardware": "GPU Supercomputers",
+                "timeline": "now",
+                "target_systems": [
+                    {
+                        "system": "NVIDIA DGX H100",
+                        "spec": "8x H100 SXM5, 640GB HBM3, NVLink 900 GB/s, 32 PetaFLOPS",
+                        "suitability": "Immediate research prototype. QNode fields up to ~10M nodes with QITF bond dimension D=64. Primary Phase 1 experiment target."
+                    },
+                    {
+                        "system": "NVIDIA Grace Hopper",
+                        "spec": "CPU+GPU unified 900GB/s NVLink, 480GB coherent memory",
+                        "suitability": "Ideal for hybrid CPU/GPU HVE execution. Eliminates PCIe bottleneck."
+                    },
+                    {
+                        "system": "Frontier ORNL",
+                        "spec": "1.1 ExaFLOPS, 37,888 AMD MI250X GPUs",
+                        "suitability": "Production-scale CEA. QNode fields of 1B+ nodes. Phase 3 target."
+                    },
+                    {
+                        "system": "AWS Trainium 2",
+                        "spec": "Neuron SDK, EFA 3200 Gbps cluster networking",
+                        "suitability": "Cloud-accessible. CEA research clusters deployable immediately."
+                    }
+                ]
+            },
+            {
+                "phase": 2,
+                "hardware": "Neuromorphic Chips",
+                "timeline": "5-10 years",
+                "target": "Intel Loihi 2",
+                "projected_efficiency": "100-1000x lower inference energy than GPU baseline — extrapolated from published Loihi benchmarks on sparse workloads; requires direct empirical validation",
+                "migration_components": {
+                    "qnode_to_loihi": "QNode five-tuple -> Loihi multi-compartment neuron",
+                    "Gamma_to_loihi": "Gamma field -> Loihi STDP synaptic plasticity",
+                    "hve_T1_T2_to_loihi": "Recurrent inhibitory networks on Loihi at spike speed"
+                }
+            },
+            {
+                "phase": 3,
+                "hardware": "Programmable Matter Substrate",
+                "timeline": "20+ years",
+                "description": "Aspirational architectural horizon — field-based distributed compute with persistent local memory, asynchronous execution, phase synchronization circuits, and self-modifying topology. Not an engineering proposal for the current decade."
+            }
+        ]
+    },
+    "safety_alignment": {
+        "structural_safety_properties": {
+            "hallucination_safety": {
+                "status": "conditional_on_Conjecture_1",
+                "statement": "If Conjecture 1 is empirically confirmed, factually incorrect states cannot persist in CEA equilibrium."
+            },
+            "causal_safety": {
+                "status": "structural_independent_of_Conjecture_1",
+                "statement": "HVE Tier 2 enforces causal consistency, preventing generation of outputs violating established causal chains. Holds whenever T2 is operating."
+            },
+            "logical_safety": {
+                "status": "structural_independent_of_Conjecture_1",
+                "statement": "HVE Tier 1 eliminates logical contradictions in real-time. Also independent of Conjecture 1."
+            }
+        },
+        "alignment_via_energy_landscape": {
+            "description": "Alignment through energy landscape design — complementary structural approach to RLHF and constitutional AI.",
+            "extended_reality_constraint": "G_extended(s) = f(Psi_env, Psi_time, Psi_causal, Psi_ext, Psi_values, Psi_safety)",
+            "alignment_challenge": "The alignment grounding components (Psi_values, Psi_safety) must themselves be correctly specified. A misspecified value function would cause the system to robustly optimize toward misaligned behaviors — with the additional risk that thermodynamic enforcement makes this misalignment harder to correct. The specification of Psi_values is not solved by this architecture; it is a prerequisite of it.",
+            "recommendation": "Conservative defaults, formal verification of grounding components, mandatory human oversight of Psi_values definition."
+        },
+        "interpretability": {
+            "observable_signal": "QNode energy level epsilon at any time step reflects grounding status.",
+            "high_energy": "uncertain or ungrounded",
+            "low_energy": "confident and grounded"
+        },
+        "failure_modes": [
+            {
+                "mode": "theta_reality_miscalibration",
+                "risk": "medium",
+                "mitigation": "Adaptive theta calibration per domain. Conservative defaults. Human-in-loop for critical domains."
+            },
+            {
+                "mode": "glassy_dynamics_incorrect_state_persistence",
+                "risk": "high",
+                "mitigation": "Active research problem (see glass_transition_risk). No current resolution. Mitigations under investigation: entropy regularization, hierarchical initialization, adaptive temperature scheduling."
+            },
+            {
+                "mode": "knowledge_base_corruption",
+                "risk": "high",
+                "mitigation": "Cryptographic knowledge provenance. Multiple independent knowledge sources. Consensus-weighted grounding scores."
+            },
+            {
+                "mode": "HVE_T4_adversarial_simulation",
+                "risk": "medium",
+                "mitigation": "Simulation sandboxing. Multiple independent simulation instances with majority-vote verification."
+            },
+            {
+                "mode": "phase_lock_false_binding",
+                "risk": "low",
+                "mitigation": "Semantic similarity gate on Kuramoto coupling: kappa = 0 for I(psi_i;psi_j) < I_min."
+            },
+            {
+                "mode": "misaligned_Psi_values_specification",
+                "risk": "high",
+                "mitigation": "Formal verification of grounding components. Human oversight. Conservative defaults. Regular alignment audits."
+            }
+        ],
+        "dual_use_risk": "Accurate misinformation — factually grounded claims arranged to mislead without containing false statements — would bypass the grounding constraint. Requires value alignment beyond factual grounding."
+    },
+    "processing_flow": {
+        "input": {
+            "type": [
+                "text",
+                "image",
+                "audio",
+                "sensor",
+                "symbolic_data"
+            ],
+            "transformation": "converted_to_energy_patterns"
+        },
+        "execution_steps": [
+            "local_QNode_interactions",
+            "pattern_emergence",
+            "field_stabilization",
+            "HVE_parallel_verification",
+            "semantic_crystallization",
+            "QITF_global_context_conditioning",
+            "agent_collaboration",
+            "global_synchronization"
+        ],
+        "output": {
+            "type": [
+                "language",
+                "action",
+                "simulation",
+                "prediction",
+                "decision"
+            ],
+            "properties": [
+                "contextual",
+                "adaptive",
+                "self_correcting",
+                "multi_layer_reasoned",
+                "thermodynamically_grounded"
+            ]
+        }
+    },
+    "experimental_roadmap": {
+        "design_note": "All experiments include explicit success criteria AND explicit failure conditions. Failure conditions are as scientifically important as success criteria: they define the conditions under which specific theoretical assumptions of CEA are empirically falsified, enabling targeted architectural revision.",
+        "phase1": {
+            "name": "QNode Validation",
+            "timeline": "0-12 months",
+            "hardware": "8x NVIDIA H100 GPU cluster",
+            "experiments": [
+                {
+                    "id": "E1.1",
+                    "name": "QNode field emergence",
+                    "success_criterion": "Stable phase-synchronized clusters emerge from random initialization in <1000 steps, matching semantic similarity of input with F1 > 0.80",
+                    "failure_condition": "If stable clusters fail to emerge within 2000 steps across 3 independent initializations, the QNode interaction model is insufficient.",
+                    "implication_if_failure": "Kuramoto coupling strength insufficient, or energy landscape lacks required attractor structure. Architectural revision of phase coupling required."
+                },
+                {
+                    "id": "E1.2",
+                    "name": "Energy efficiency",
+                    "success_criterion": "Active QNode fraction <15% at L1; <5% at L5 on natural language inputs",
+                    "failure_condition": "If active fraction exceeds 20% at L1, the energy gating mechanism is insufficient.",
+                    "implication_if_failure": "Energy efficiency projection invalid. Sparse activation hypothesis requires architectural revision — likely requiring stronger energy penalties or lower epsilon_min threshold."
+                },
+                {
+                    "id": "E1.3",
+                    "name": "Phase binding accuracy",
+                    "success_criterion": "Phase-synchronized clusters match ground-truth semantic clusters with F1 > 0.85 on bAbI relational reasoning",
+                    "failure_condition": "If F1 < 0.70 under optimized coupling parameters, Kuramoto dynamics do not implement adequate semantic binding.",
+                    "implication_if_failure": "Phase coupling mechanism fundamentally insufficient for compositional binding. Alternative binding mechanism required."
+                },
+                {
+                    "id": "E1.4",
+                    "name": "HVE T1-T2 speed",
+                    "success_criterion": "T1 <1ms, T2 <10ms per verification at L3 causal graph with 1M nodes",
+                    "failure_condition": "If T2 latency exceeds 50ms at 1M nodes, HVE bandwidth constraint G_bandwidth >= R_claims fails for real-time operation.",
+                    "implication_if_failure": "HVE cannot keep pace with generation at realistic language model speeds. Causal graph architecture requires redesign for sub-10ms throughput."
+                }
+            ]
+        },
+        "phase2": {
+            "name": "Grounding Validation",
+            "timeline": "6-18 months",
+            "hardware": "NVIDIA DGX SuperPOD 128x H100",
+            "experiments": [
+                {
+                    "id": "E2.1",
+                    "name": "Hallucination decay",
+                    "success_criterion": "95% of injected hallucinations reach epsilon > epsilon_max within 100 inference steps",
+                    "failure_condition": "Inconsistent decay across initializations indicates glassy dynamics.",
+                    "implication_if_failure": "Conjecture 1 ergodicity assumption challenged. Architectural revision required."
+                },
+                {
+                    "id": "E2.2",
+                    "name": "TruthfulQA benchmark",
+                    "success_criterion": ">85% truthfulness score with full HVE active",
+                    "failure_condition": "If TruthfulQA score < 70% with full HVE active, the structured verification approach is not achieving the hypothesized suppression effect.",
+                    "minimal_acceptable": "Statistically significant improvement over best GPT-4 score (~59%) at p < 0.01",
+                    "implication_if_failure": "Hypothesis 1 (Energy-Correctness Equivalence) is weakened."
+                },
+                {
+                    "id": "E2.3",
+                    "name": "FactScore evaluation",
+                    "success_criterion": "FactScore precision >90% with HVE active",
+                    "failure_condition": "If precision improvement over RAG baseline is < 10 percentage points, structural grounding provides insufficient advantage over retrieval augmentation to justify architectural complexity."
+                },
+                {
+                    "id": "E2.4",
+                    "name": "Energy-correctness correlation",
+                    "success_criterion": "Pearson r > 0.70 between QNode energy levels and output correctness on TruthfulQA",
+                    "failure_condition": "If r < 0.40, Hypothesis 1 (Energy-Correctness Equivalence) is not supported, undermining the core theoretical premise of the Verification-First paradigm."
+                }
+            ]
+        },
+        "phase3": {
+            "name": "Full Architecture",
+            "timeline": "18-48 months",
+            "hardware": "Frontier-class exascale cluster partition",
+            "experiments": [
+                {
+                    "id": "E3.1",
+                    "name": "BIG-Bench Hard",
+                    "success_criterion": ">80% across all task categories",
+                    "failure_condition": "If performance < 60% on causal reasoning tasks specifically, HVE Tier 2 integration is insufficient for complex multi-step causal inference."
+                },
+                {
+                    "id": "E3.2",
+                    "name": "ARC-AGI Challenge",
+                    "success_criterion": ">70% vs best current AI ~60%",
+                    "failure_condition": "If ARC-AGI performance is within margin of error of best current transformer-based systems, emergent reasoning beyond pattern matching has not been demonstrated. The architectural complexity of CEA may not be justified relative to simpler approaches."
+                },
+                {
+                    "id": "E3.3",
+                    "name": "Energy benchmark vs GPT-4 Turbo",
+                    "success_criterion": "10x reduction in joules per token at equivalent perplexity",
+                    "failure_condition": "If energy reduction is < 3x, sparse activation is insufficient for meaningful energy advantage, and the efficiency case for CEA requires revision."
+                },
+                {
+                    "id": "E3.4",
+                    "name": "Long-horizon memory retention",
+                    "success_criterion": "85% answer accuracy on NarrativeQA with 1M+ token context via crystallized memory",
+                    "failure_condition": "If accuracy < 60%, the crystallized memory architecture does not outperform RAG systems on long-horizon tasks, weakening the multi-scale memory contribution."
+                }
+            ]
+        },
+        "ablation_study": {
+            "note": "All figures are hypotheses prior to implementation.",
+            "variants": [
+                {
+                    "variant": "CEA_full",
+                    "removes": "nothing",
+                    "expected_TruthfulQA": ">85% (hypothesis)"
+                },
+                {
+                    "variant": "CEA_minus_HVE_T4",
+                    "removes": "simulation_verification",
+                    "expected_TruthfulQA": "~75-80%"
+                },
+                {
+                    "variant": "CEA_minus_HVE_T2_T4",
+                    "removes": "causal_semantic_simulation",
+                    "expected_TruthfulQA": "~60-70%"
+                },
+                {
+                    "variant": "CEA_minus_full_HVE",
+                    "removes": "all_grounding",
+                    "expected_TruthfulQA": "~35-45% — if not comparable to standard LLM, energy landscape itself provides grounding without explicit HVE (theoretically interesting result)"
+                },
+                {
+                    "variant": "CEA_minus_QITF",
+                    "removes": "tensor_field_uses_O(N)_broadcast",
+                    "expected_TruthfulQA": "~85%+ accuracy but significantly slower — validates QITF for efficiency not accuracy"
+                },
+                {
+                    "variant": "CEA_minus_phase_dynamics",
+                    "removes": "phase_synchronization_static_Gamma",
+                    "expected_TruthfulQA": "~70-75%"
+                }
+            ]
+        }
+    },
+    "limitations": {
+        "most_important": "CEA v0.3 remains a theoretical architecture. All performance projections are derived from theoretical analysis and extrapolation from component-level experiments in related systems. Large-scale empirical validation is required before any quantitative claim should be taken as established.",
+        "ergodicity_problem": {
+            "label": "Most critical theoretical uncertainty",
+            "description": "Whether practical QNode field dynamics satisfy the ergodicity condition underlying Conjecture 1 is unresolvable by theoretical analysis alone. High-dimensional energy landscapes generically contain exponentially many local minima. Glass-like behavior would cause hallucinated states to persist indefinitely in locally stable incorrect configurations, completely negating the core CEA claim.",
+            "resolution": "Requires the empirical study program specified in the experimental roadmap."
+        },
+        "qnode_synchronization_overhead_at_scale": "At scale beyond approximately 10^8 QNodes, Gamma-field update latency becomes the dominant computational cost. At N_neighbors=100 and 64-bit state vectors, communicating field updates requires approximately 80 TB of data movement per inference step. Novel compression schemes or hierarchical connection architectures will be required.",
+        "T4_latency_vs_real_time": "T4 latency (100ms-10s) is fundamentally incompatible with sub-millisecond response domains. CEA must either operate without T4 in latency-critical contexts — forfeiting maximum hallucination suppression — or pre-compute T4 verdicts for predictable claim types, reducing generality. No current resolution.",
+        "theta_reality_calibration_complexity": "Learning domain-specific grounding thresholds requires labeled data on the groundedness-creativity tradeoff curve, expensive in novel domains.",
+        "training_instability_at_phase_3_4": "Addition of consistency penalties in Phase 4 may destabilize earlier-phase representations if gradient surgery does not fully resolve objective conflicts. Risk is theoretical and untested at scale.",
+        "qitf_bond_dimension_growth": "For very large N with complex global state, required bond dimension D may grow beyond practical budget. Alternative tensor network architectures may be needed; optimal architecture is unknown.",
+        "fundamental_open_problems": [
+            "glass_transition_question: Does the QNode field exhibit glass transition behavior at realistic scale? If so, under what conditions, and what architectural interventions are necessary and sufficient?",
+            "creativity_grounding_Pareto_frontier: What is the mathematically optimal tradeoff between creative flexibility and grounding accuracy as a function of theta_reality?",
+            "phase_dynamics_in_high_dimensional_psi_spaces: The Kuramoto model is well-studied for scalar phase oscillators. Extension to high-dimensional phase dynamics in complex psi-state spaces requires new mathematical analysis.",
+            "AGI_completeness_question: Does the CEA six-layer hierarchy provide a sufficient computational substrate for general reasoning, or are additional layers or mechanisms required?"
+        ]
+    },
+    "physics_abstractions": {
+        "energy": "computational_priority_and_correctness_proxy",
+        "entropy": "system_uncertainty",
+        "phase_alignment": "knowledge_synchronization",
+        "resonance": "high_confidence_pattern_matching",
+        "field": "distributed_context_space",
+        "landauer_bound": "minimum_thermodynamic_cost_of_information_erasure",
+        "kolmogorov_complexity": "truth_compressibility_proxy",
+        "mps_bond_dimension": "expressivity_efficiency_tradeoff_in_global_context_representation",
+        "glass_transition": "risk_of_trapping_in_locally_stable_incorrect_states"
+    },
+    "final_objective": {
+        "paradigm": "Verification-First AI",
+        "goal": "Create adaptive emergent reasoning through interacting self-organizing systems in which factual correctness is enforced as a thermodynamic stability condition during computation rather than as a post-generation filter.",
+        "experimental_resolution": "The Equilibrium Grounding Conjecture's empirical resolution through the Phase 1-3 experimental program will determine whether the Verification-First paradigm is a viable foundation for reliable machine reasoning or requires fundamental architectural revision. Either outcome advances the field: confirmation validates the approach; falsification identifies exactly which theoretical assumptions fail and why.",
+        "long_term_vision": "Develop scalable cognition that behaves more like evolving matter and biological intelligence than static neural prediction systems, with explicit falsifiable milestones at each stage of development.",
+        "closing_statement": "Matter has computed for 13.8 billion years. The results are all around us. CEA asks: can we learn to compute the same way?"
+    }
+}
